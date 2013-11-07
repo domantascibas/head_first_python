@@ -43,7 +43,8 @@ def radio_button(rb_name, rb_value):
                              '" value="' + rb_value + '"> ' + rb_value + '<br />')
 
 def u_list(items):
-    """This function creates a list from a list passed as an argument. It returns a string."""
+    """This function creates an unnumbered HTML list from a list passed as an argument.
+    It returns a string."""
     u_string = '<ul>'
     for item in items:
         u_string += '<li>' + item + '</li>'
@@ -51,10 +52,11 @@ def u_list(items):
     return(u_string)
 
 def header(header_text, header_level=2):
-    """This function generates header captions from the text and header level passed as arguments."""
+    """This function generates header tags (H1, H2, H3, etc) from the text and header level passed as arguments.
+    Level 2 is the default. "header_text" argument is required."""
     return('<h' + str(header_level) + '>' + header_text +
            '</h' + str(header_level) + '>')
 
 def para(para_text):
     """This function wraps the string passed in with <p> tags, and generates an HTML paragraph."""
-    return('<p>' + para_text + '</p>') 
+    return('<p>' + para_text + '</p>')
